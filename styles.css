@@ -1,0 +1,61 @@
+body {
+	background-color: snow;
+	font-size: 2rem;
+	font-family: 'Times New Roman', sans;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	padding: 8rem;
+}
+
+p {
+	text-align: center;
+}
+
+input {
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'Times New Roman', sans;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 15px;
+}
+
+button {
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'Times New Roman', sans;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 15px;
+	border-width: 1px;
+}
+
+.elementti {
+	flex-direction: column;
+	align-items: center;
+}
+
+#rekisterointi:hover{
+	background-color: lightgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
