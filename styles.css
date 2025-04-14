@@ -39,23 +39,6 @@ button {
 	align-items: center;
 }
 
-#rekisterointi:hover{
+#rekisterointi:hover, #nappi:hover{
 	background-color: lightgrey;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
