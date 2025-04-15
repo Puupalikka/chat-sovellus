@@ -5,14 +5,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 }
 
 header {
-	padding: 8rem;
+	padding: 9rem;
 }
 
 p {
-	text-align: center;
+	position: relative;
+	z-index: 1;
 }
 
 input {
@@ -39,6 +41,19 @@ button {
 	align-items: center;
 }
 
-#rekisterointi:hover, #nappi:hover{
+#rekisterointi:hover, .nappi:hover{
 	background-color: lightgrey;
+}
+
+#otsikkopala {
+	padding: 10rem;
+	z-index: 1;
+}
+
+#kuva {
+	top: 4rem;
+	width: 50rem;
+	position: fixed;
+	z-index: -1;
+	opacity: 0.2;
 }
