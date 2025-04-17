@@ -50,25 +50,15 @@ function render() {
 }
 
 function buttonGetter() {
-	const poistonappi = document.getElementById('poistonappi');
-	const pelinappi = document.createElement('button');
+	poistonappiCreation();
+	pelinappiCreation();
+}
 
+function pelinappiCreation() {
+	const pelinappi = document.createElement('button');
+	pelinappi.textContent = 'Pelaa!'
 	pelinappi.className = 'nappi';
-	pelinappi.textContent = 'Pelaa!';
-	
 	document.body.appendChild(pelinappi);
-	document.body.appendChild(poistonappi);
-	
-	poistonappi.addEventListener('click', () => {
-		document.body.removeChild(pelinappi);
-		
-		const kuva = document.createElement('img');
-		kuva.src = 'https://cdn.pixabay.com/photo/2012/04/16/13/57/trash-36103_1280.png';
-		kuva.alt = 'kuva';
-		kuva.id = 'kuva';
-		document.body.appendChild(kuva);
-		});
-	
 	pelinappi.addEventListener('click', () => {
 
 	while (document.body.firstChild) {
@@ -76,6 +66,19 @@ function buttonGetter() {
 	}
 
 	canvas();
+	});
+}
+
+function poistonappiCreation() {
+	const poistonappi = document.getElementById('poistonappi');
+	poistonappi.addEventListener('click', () => {
+		document.body.removeChild(document.querySelectorAll('.nappi')[0]);
+		
+		const kuva = document.createElement('img');
+		kuva.src = 'https://cdn.pixabay.com/photo/2012/04/16/13/57/trash-36103_1280.png';
+		kuva.alt = 'kuva';
+		kuva.id = 'kuva';
+		document.body.appendChild(kuva);
 	});
 }
 
