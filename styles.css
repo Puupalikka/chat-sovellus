@@ -9,7 +9,7 @@ body {
 }
 
 header {
-	padding: 9rem;
+	padding: 9.5rem;
 }
 
 p {
@@ -56,4 +56,9 @@ button {
 	position: fixed;
 	z-index: -1;
 	opacity: 0.2;
+}
+
+#poistoteksti {
+	font-size: 3rem;
+	font-weight: bold;
 }
