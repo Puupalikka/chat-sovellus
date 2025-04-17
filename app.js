@@ -15,7 +15,6 @@ function toinen_sivu(nimi) {
 	}
 	
 	const hedari = document.createElement('header');
-	
 	const tervehdys = document.createElement('p');
 	tervehdys.id = 'tekstikappale';
 	
@@ -41,7 +40,9 @@ function toinen_sivu(nimi) {
 
 function poista() {
 	localStorage.removeItem('nimi');
-	document.getElementById('tekstikappale').textContent = 'Data poistettu!';
+	document.getElementById('tekstikappale').id = 'poistoteksti';
+	document.getElementById('poistoteksti').style = 'font-weight: bold';
+	document.getElementById('poistoteksti').textContent = 'Data poistettu!';
 	document.body.removeChild(poistonappi);
 	
 	const kuva = document.createElement('img');
